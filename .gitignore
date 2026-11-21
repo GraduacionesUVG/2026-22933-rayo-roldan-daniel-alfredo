@@ -1,0 +1,24 @@
+# Variables de entorno reales (solo se versiona .env.example)
+.env
+.env.*
+!.env.example
+
+# Node / Nixty
+node_modules/
+dist/
+*.tgz
+result
+result-*
+
+# Python / análisis
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Datos de los participantes (privados)
+src/analysis/data/
+
+# Sistema operativo y editores
+.DS_Store
+.vscode/
+.idea/

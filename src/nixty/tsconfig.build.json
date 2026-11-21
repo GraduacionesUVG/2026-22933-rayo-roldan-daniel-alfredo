@@ -1,0 +1,11 @@
+{
+  // Build config: emits dist/ from src/ only. Tests are never compiled into the published package.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*"],
+  // `nixty init`'s template is a user's file, not part of the library: `pnpm build` copies it into
+  // dist/ as it is instead of compiling it.
+  "exclude": ["src/template.ts"]
+}
